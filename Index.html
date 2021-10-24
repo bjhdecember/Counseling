@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The BJ Taylor Counseling and Cancer Center</title>
+    <meta name="author" content="The BJ Taylor Counseling and Cancer Center">
+    <meta name="description" content="Store front for The BJ Taylor Counseling and Cancer Center">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+    </style>
+    <script>
+        function save() {
+            localStorage.setItem("counselingapplication", true);
+        }
+        window.onload = function () {
+            var favorite = document.getElementById('favorite');
+            if (window.localStorage) {
+                var storage = window.localStorage;
+                if (storage.getItem('counselingapplication') == 'true') {
+                    favorite.innerHTML = "counseling application is a favorite"
+                }
+    </script>
+
+<body>
+    <header id="mainheader">
+        <nav>
+            <ul>
+                <li><img src="images/BJT logo.png" height="1" width="55" /></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pages/resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="width: 1000px; margin-left: auto;margin-right: auto;">
+
+        <aside id="leftmenu">
+            <a href="index.html"><img src="images/BJT logo.png" height="250" /></a>
+            <header>
+                <h4 style="text-align: center;">Our Site</h4>
+            </header>
+            <ul>
+                <li> <a href="counselingcenter.html">BiblicalCounseling Center</a></li>
+                <li><a href="resources.html">resources</a></li>
+            </ul>
+            <input type="search" class="searchbox" placeholder="Search our site" />
+
+        </aside>
+        <main id="main">
+            <article>
+                <header>
+                    <h1 style="font-size:40px; color:#131214"> The BJ Taylor Counseling, Cancer and Resource Center</h1>
+                </header>
+                <figure>
+                    <img src="images/IMGmompicture.png" alt="Barbara Jean Taylor" />
+                    <figcaption>Barbara Jean Taylor</figcaption>
+                </figure>
+                <p>
+                    Our purpose of <b>The BJ Taylor Counseling, Cancer and Resource Center</b> is to serve and support
+                    women diagnosed with diverse cancers, by providing Biblical Counseling and assistance in locating
+                    the best resources.
+                    <br>
+                    We offer Biblical Counseling through our dedicated, certified Biblical Counselors.
+                <h2>What Is Biblical Counseling?</h2>
+                Biblical Counseling is using doctrinal truths from God's Word and practically applying those truths to
+                everyday life, to help deal with life's problems and concerns.
+                It's using God's Word as a guide to help you in your daily walk (John 17:17, Romans 8:28-29)
+                </p>
+                <p>Download an application for counseling <a href="counselingapplication.zip">counseling application</a>
+                </p>
+                <p>
+                    <button onclick="save()" type="button">Save as Favorite</button>
+                </p>
+            </article>
+        </main>
+        <footer>
+            <p>Our address is</p>
+            <address>The BJ Taylor Counseling and Cancer Center - Burlington, KY</address>
+            </p>
+            <p><small>&copy; 2016 The BJ Taylor Counseling and Cancer Center - All rights reserved</small></p>
+            <p>Contact us via <a href="mailto:info@BJTCounselingCenter.com">email</a></p>
+            <p><small><a href="https://www.learningdojo.net">Created by Learning Dojo</a></small></p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
