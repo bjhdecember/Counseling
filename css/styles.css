@@ -1,7 +1,7 @@
 body {
     margin-top: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: auto;
+    margin-left: 25%;
     margin-right: auto;
     background-color: lightpink
 }
@@ -90,7 +90,7 @@ img {
     float: center; 
 }
 figcaption{
-text-indent: 28%; 
+    text-indent: 49%; 
 }
 
 div {
@@ -102,3 +102,5 @@ div {
         order: 1; 
     }  
 }
+
+h2{margin-left: 2%;}
