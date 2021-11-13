@@ -5,7 +5,19 @@ body {
     margin-right: auto;
     background-color: lightpink
 }
+.maincontent{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+/*Main Content*/
 
+/*Flexbox Styles*/
+.content1{
+    display: flex;
+    flex-wrap: wrap; 
+}
 #mainheader {
     background-color: beige;
 }
@@ -31,7 +43,7 @@ nav>ul>li a {
     text-decoration: none;
     font-weight: bold;
 }
-#leftmenu {
+#leftmenu{
     float: left;
     width: 30%;
     margin-bottom: 20px;
@@ -44,22 +56,49 @@ nav>ul>li a {
 }
 
 #main {
-    float: right;
-    width: 70%;
     margin-bottom: 20px;
 }
-
-footer {
-    clear: both;
-    width: 100%;
+main p{
+    text-align: left;
+    padding: 0 20px;
+    line-height: 2;
+}
+main p br{
+   margin-bottom: 35px;
 }
 
-img {
+
+/*Footer*/
+footer {
+    clear: both;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.round {
     max-width: 100%;
     height: auto;
     float: center;
+    border: 6px solid purple;
+    border-radius: 50%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    float: center; 
+}
+figcaption{
+text-indent: 28%; 
 }
 
 div {
     width: 75%;
+}
+
+@media screen and(max-width: 600px){
+    #leftmenu{
+        order: 1; 
+    }  
 }
