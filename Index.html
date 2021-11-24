@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>The BJ Taylor Counseling and Cancer Center</title>
+    <title>Home | The BJ Taylor Counseling and Cancer Center</title>
     <meta name="author" content="The BJ Taylor Counseling and Cancer Center">
     <meta name="description" content="Store front for The BJ Taylor Counseling and Cancer Center">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,41 +29,39 @@
     <script>
     
     </script>
+</head>
 
 <body>
-    <header id="mainheader">
-        <nav>
-            <ul>
-                <li><img src="images/BJT logo.png" height="1" width="55" /></li>
+    <header id="mainheader" class="clearfix">
+        <img src="images/BJT logo.png" height="1" width="55">
+        <nav class="clearfix">
+            <div class="row limited"></div>
+            <ul id="primaryNav">
+                <button id="hamburgerBtn">&#9776;</button>
+                <section class="column small-12">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="counselingcenter.html">BiblicalCounseling Center</a></li>
+                <li><a href="resources.html">resources</a></li>
             </ul>
+                </section>
+            <input type="search" class="searchbox" placeholder="Search our site" />
+            <div class="content1">
+            </div>   
         </nav>
     </header>
     <div class="content">
     <div style="width: 1000px; margin-left: auto;margin-right: auto;">
-
-        <aside id="leftmenu">
-            <a href="index.html"><img src="images/BJT logo.png" height="250" /></a>
-            <header>
-                <h4 style="text-align: left;">Our Site</h4>
-            </header>
-            <ul>
-                <li> <a href="counselingcenter.html">BiblicalCounseling Center</a></li>
-                <li><a href="resources.html">resources</a></li>
-            </ul>
-            <input type="search" class="searchbox" placeholder="Search our site" />
-            <div class="content1">
-        </aside>
         </div>
+    </div>
         <main id="main">
             <article>
                 <header>
-                    <h1 style="font-size:40px; color:#131214"> The BJ Taylor Counseling, Cancer and Resource Center</h1>
+                    <h1 style="font-size:40px;"> The BJ Taylor Counseling, Cancer and Resource Center</h1>
                 </header>
                 <figure>
-                    <img src="images/IMGmompicture.png" alt="Barbara Jean Taylor" class="round"/>
+                <center><img src="images/IMGmompicture.png" alt="Barbara Jean Taylor" class="round img"/></center>
                     <figcaption>Barbara Jean Taylor</figcaption>
                 </figure>
                 <section 1>
@@ -101,16 +103,23 @@
             </article>
         </main>
     </div>
-        <footer>
-            <p>Our address is</p>
-            <address>The BJ Taylor Counseling and Cancer Center - Burlington, KY</address>
-            </p>
-            <p><small>&copy; 2016 The BJ Taylor Counseling and Cancer Center - All rights reserved</small></p>
-            <p>Contact us via <a href="mailto:info@BJTCounselingCenter.com">email</a></p>
-        </footer>
-    </div>
->
+        <footer class="clearfix">
+            <div class="row limited">
+                <h2>Location</h2>
+    
+            <ul>The BJ Taylor Counseling and Cancer Center</ul> 
+            <ul>Burlington, KY</ul>
+                <h2>Company</h2>
+                <h2>Social</h2>
+            <ul><h2><a href="about.html">About Us</a></h2></ul>
+    
+            <ul><h2>Contact us via <a href="mailto:info@BJTCounselingCenter.com">email</a></h2></ul>
 
+            <ul><small>&copy; 2016 The BJ Taylor Counseling and Cancer Center - All rights reserved</small></ul>
+        </div>
+        </footer>
+
+        <script src=".js/menuToggle.js"></script>
 
 </body>
 
