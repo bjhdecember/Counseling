@@ -10,9 +10,37 @@ header img {height: 50px;}
 nav button {display: none;}
 nav ul {display: block;}
 nav li {float: left; width: 25%;}
+nav ul.open {display: block;}
+nav ul li {display: block;}
 
+footer ul li{
+    text-align: center;
+}
+header h1 {
+    padding: .5rem 0 0 0;
+    font-size: 1.95rem;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 0%;
+    
+}
+figcaption{
+    text-indent: 40%; 
+}
+.search-box{
+    width: 330px;
+    height: 30px; 
+    padding: 6px 12px; 
+    border: 1px solid #a0a0a0;
+}
+.search-button {
+    background-color: #a0a0a0;
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    border: 0;
+    padding: 0;
+}
 
-
-
-} /*end of media query*/
-
+/*end of media query*/
+}

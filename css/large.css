@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
 
 
 .large-3{width: 25%;}
@@ -6,6 +6,41 @@
 nav ul {margin-left: 2vw;}
 nav li {width: auto;}
 nav a {padding: .7rem 1rem;}
+nav ul.open {display: block;}
+nav ul li {display: block;}
 
+footer ul li{
+    text-align: center;
+}
+.searchbox {
+    padding: 10px;
+    margin: 10px 10px;
+    width: 200px;
+}
+header h1 {
+    padding: .5rem 0 0 0;
+    font-size: 1.95rem;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 0%;
+    
+}
+figcaption{
+    text-indent: 45%; 
+}
+.search-box{
+    width: 330px;
+    height: 30px; 
+    padding: 6px 12px; 
+    border: 1px solid #a0a0a0;
+}
+.search-button {
+    background-color: #a0a0a0;
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    border: 0;
+    padding: 0;
+}
 } /*end of media query*/
 

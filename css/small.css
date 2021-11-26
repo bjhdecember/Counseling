@@ -10,7 +10,7 @@ body {
 /* grid rules*/
 .row {clear: both;}
 .limited {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -19,15 +19,14 @@ body {
 .small-12{width: 100%;}
 
 /* header rules */
-header {
-    background-color: beige;
-}
+
 
 header img {
     float: left;
     height: 50px;
     padding-right: 10px;
 }
+
 header h1, header h2 {
     margin: 0;
     font-weight: 300;
@@ -35,6 +34,10 @@ header h1, header h2 {
 header h1 {
     padding: .5rem 0 0 0;
     font-size: 1.95rem;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 10%;
+    
 }
 header h2 {
     padding: .2rem 0 0 0;
@@ -44,13 +47,11 @@ header h2 {
 button#hamburgerBtn {
     background: none;
     border: none;
-    color: #fff;
+    color: rgb(22, 20, 20);
     font-size: 2.4rem;
     cursor: pointer;
     padding: 0 30px 0 2vw;
 }
-
-nav {background-color: beige;}
 nav ul {margin: 0; padding: 0;}
 nav li {list-style-type: none;}
 nav a {
@@ -59,30 +60,73 @@ nav a {
     color: rgb(14, 13, 13);
     text-align: center;
     text-decoration: none;
+    
 }
-nav a:hover {background-color: darkviolet;}
+nav a:hover {background-color: rgb(224, 235, 196);}
 nav ul.open {display: block;}
 nav ul li {display: none;}
 
 
-
-
 footer {
     background-color: beige;
-    font-size: 1rem;
+    font-size: .8rem;
+    clear: both;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    left: 0%;
+    margin-left: 0%;
+    width: 100%;
+    position: absolute;
 
 }
 footer h2 {
     font-style: italic;
     text-transform: uppercase;
-    margin: 1rem 0 .3rem 0;
+    margin: 0 0 .3rem 0;
+    text-align: center;
+    padding-top: 2%;
 }
 
+footer h4 {
+    font-style: italic;
+    margin: 0 0 .3rem 0;
+    text-align: center;
+    padding-top: 1%;
+}
+
+footer ul li{
+    text-align: center;
+}
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
 
+main img{
+    width: 40%;
+    height: auto;
+    margin-top: 0%;
 
+}
+figcaption{
+    text-indent: 30%; 
+}
 
+.search-box{
+    width: 200px;
+    height: 30px; 
+    padding: 6px 12px; 
+    border: 1px solid #a0a0a0;
+}
+
+.search-button {
+    background-color: #a0a0a0;
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    border: 0;
+    padding: 0;
+}
