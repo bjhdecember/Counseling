@@ -93,15 +93,17 @@ fieldset{
     border-style: solid;
     margin-bottom: 10%;
     margin-top: 10%;
+    font-size: 120%;
 }
 
 fieldset>legend{
     color: purple;
 }
 
-p>label{
+label{
     display: block;
     color: purple;
+    font-size: 120%;
 }
 
 input:valid{
