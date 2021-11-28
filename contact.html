@@ -18,6 +18,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+  
 
 
     <!--[if lt IE 9]>
@@ -36,10 +37,11 @@
             <ul id="primaryNav">
                 <li><img src="images/BJT logo.png" height="1" width="55" /></li>
                 <li><a href="index.html">Home</a></li>
+                <li> <a href="counselingcenter.html">Biblical Counseling Center</a></li>
+                <li><a href="resources.html">resources</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li> <a href="counselingcenter.html">BiblicalCounseling Center</a></li>
-                <li><a href="resources.html">resources</a></li>
+                
             </ul>
             <input type="search" class="searchbox" placeholder="Search our site" />
             <div class="content1">
@@ -49,17 +51,45 @@
     <div style="width: 1000px; margin-left: auto;margin-right: auto;">
         <main id="main">
             <article>
-                
-            </article>
-           
-        </main>
-        <footer>
-            <p>Our address is</p>
-            <address>The BJ Taylor Counseling and Cancer Center - Burlington, KY</address>
+                <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+               <fieldset>
+                   <legend>Contact Information</legend>
+                   <p>
+                   <label for="nameField">*Your name:</label>
+                   <input tabindex="1" id="nameField" type="text" required="required" minlength="10" maxlength="75" name="customerName">
+                </p>
+                <p>
+                <label for="customerEmail">*Your email:</label>  
+                <input tabindex="2" type="email" required="required" name="customerEmail">
             </p>
-            <p><small>&copy; 2016 The BJ Taylor Counseling and Cancer Center - All rights reserved</small></p>
-            <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
-        </footer>
+                    <input type="hidden" name="source" value="ContactForm">
+                <label for="feedbackText">Your feedback:</label>
+                <p><textarea tabindex="3" name="feedbackText" cols="40" rows="3"></textarea>
+                </p>
+                    <input tabindex="4" type="submit" value="SendContact">
+                </fieldset>
+                </form>
+                <footer class="clearfix">
+                    <div class="row limited">
+                        <section class="column small-12 medium-6 large-3">
+                            <h2>Location</h2>
+                            Burlington, KY 41005
+                        </section>
+                        <section class="column small-12 medium-6 large-3">
+                            <h2>Company</h2>
+                        </section>
+                        <section class="column small-12 medium-6 large-3">
+                            <h2>Social</h2>
+                        </section>
+                        <section class="column small-12 medium-6 large-3">
+                            <h2>Contact Us</h2>
+                        <ul>Contact us via <a href="mailto:info@BJTCounselingCenter.com">email</a></ul>
+                        </section>
+        
+        
+                    <ul><small>&copy; 2016 The BJ Taylor Counseling and Cancer Center - All rights reserved</small></ul>
+                </div>
+                </footer>
     </div>
 
 
