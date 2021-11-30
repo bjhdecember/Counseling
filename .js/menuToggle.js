@@ -1,13 +1,23 @@
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const mobileNav = document.querySelector(".mobileNav");
+const navActive = document.querySelector(".active");
+const nav = document.querySelector(".active");
 
 hamburger.addEventListener("click", () => {
-    hamburger.classlist.toggle("active");
-    navMenu.classlist.toggle("active");
+    hamburger.classList.toggle(navActive);
+   
 })
+
 document.querySelectorAll(".menuItem").forEach(n => n.
     addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
+        hamburger.classList.remove(navActive);
+        navMenu.classList.remove(navActive);
     }))
     
+    if (display = mobileNav) {
+        const mobileNav =  document.querySelector(".mobileNav");
+    }
+    else {
+        const nav = document.querySelector(".active");
+    }
+
