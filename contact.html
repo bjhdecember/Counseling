@@ -60,7 +60,8 @@
                    <input tabindex="1" id="nameField" type="text" required="required" minlength="10" maxlength="75" name="customerName">
                 </p>
                 <p>
-                <label for="customerEmail">*Your email:</label>  
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <label for="customerEmail">*Your email:</label> 
                 <input tabindex="2" type="email" required="required" name="customerEmail">
             </p>
                     <input type="hidden" name="source" value="ContactForm">
@@ -69,7 +70,7 @@
             </p>
                 <p><textarea tabindex="3" name="feedbackText" cols="40" rows="3"></textarea>
                 </p>
-                    <input tabindex="4" type="submit" value="SendContact">
+                    <input tabindex="4" onclick="customerEmail" type="submit" value="SendContact">
                 </fieldset>
                 </form>
                 <footer class="clearfix">
