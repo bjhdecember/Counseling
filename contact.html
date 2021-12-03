@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
     <title>The BJ Taylor Counseling and Cancer Center</title>
     <meta name="author" content="The BJ Taylor Counseling and Cancer Center">
     <meta name="description" content="Store front for The BJ Taylor Counseling and Cancer Center">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
-    <link href="css/large.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">>
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -31,28 +28,35 @@
     </style>
 
 <body>
-    <header id="mainheader" class="clearfix">
-        <nav>
-            <div class="row limited"></div>
-            <ul id="primaryNav">
-                <li><img src="images/BJT logo.png" height="1" width="55" /></li>
-                <li><a href="index.html">Home</a></li>
-                <li> <a href="counselingcenter.html">Biblical Counseling Center</a></li>
-                <li><a href="resources.html">resources</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <input class="search-box" aria-label="Search" placeholder="What can we help you find?" type="search">
-                <button class="search-button" type="submit">SEARCH</button>
-                
-            </ul>
-            <div class="content1">
-        </nav>
+    <div class="wrapper active-element">
+        <header class="main-header">
+            <nav>
+                <div class="masthead active-element">
+                    <h1><a href="#0">The BJ Taylor Counseling, Cancer and Resource Center</a></h1>
+                    <img src="images/BJT logo.png" alt="Company Logo" height="1" width="55">
+                    <div id="menu-toggle" class="menu-toggle active-element">
+                       <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div> 
+                </div>
+                <div class="main-nav-list active-element">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="counselingcenter.html">Biblical Counseling Center</a></li>
+                        <li><a href="resources.html">Recources</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
     </header>
     
     <div style="width: 1000px; margin-left: auto;margin-right: auto;">
         <main id="main">
-            <article>
-                <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <article onload="document.form.customerEmail.focus()>
+                <form action="contact.html" method="POST" name="myForm" action="/foo" novalidate enctype="application/x-www-form-urlencoded">
+                    <div class="inputBox">
                <fieldset>
                    <legend>Contact Information</legend>
                    <p>
@@ -70,7 +74,10 @@
             </p>
                 <p><textarea tabindex="3" name="feedbackText" cols="40" rows="3"></textarea>
                 </p>
-                    <input tabindex="4" onclick="customerEmail" type="submit" value="SendContact">
+                <li>
+                    <input tabindex="4" type="submit" value="SendContact">
+                </li>
+                </div>
                 </fieldset>
                 </form>
                 <footer class="clearfix">
@@ -99,7 +106,7 @@
                 </div>
                 </footer>
     </div>
-
+    <script src=".js/menuToggle.js"></script>
 
 
 </body>
