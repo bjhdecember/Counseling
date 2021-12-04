@@ -23,9 +23,6 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <style>
-       
-    </style>
 
 <body>
     <div class="wrapper active-element">
@@ -33,7 +30,9 @@
             <nav>
                 <div class="masthead active-element">
                     <h1><a href="#0">The BJ Taylor Counseling, Cancer and Resource Center</a></h1>
+                   
                     <img src="images/BJT logo.png" alt="Company Logo" height="1" width="55">
+                    
                     <div id="menu-toggle" class="menu-toggle active-element">
                        <div class="one"></div>
                         <div class="two"></div>
@@ -48,38 +47,33 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
+                    <h2>Contact Us</h2>
+                    <p class="article">Please contact us for more information.</p>
                 </div>
             </nav>
     </header>
     
     <div style="width: 1000px; margin-left: auto;margin-right: auto;">
         <main id="main">
-            <article onload="document.form.customerEmail.focus()>
-                <form action="contact.html" method="POST" name="myForm" action="/foo" novalidate enctype="application/x-www-form-urlencoded">
-                    <div class="inputBox">
-               <fieldset>
-                   <legend>Contact Information</legend>
-                   <p>
-                   <label for="nameField">*Your name:</label>
-                   <input tabindex="1" id="nameField" type="text" required="required" minlength="10" maxlength="75" name="customerName">
-                </p>
+            <article></article>
+        
+                <form action='thanks.html' method='get'></form>
+                <fieldset>
+                <legend>Contact Us</legend>
                 <p>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                <label for="customerEmail">*Your email:</label> 
-                <input tabindex="2" type="email" required="required" name="customerEmail">
+                <label> Name <span>(required)</span><input tabindex="1" type="text" name="nameminlength="10" maxlength="75""  class="text" required></label>
+            </p><br>
+            <p>
+                <label> Email <span>(required)</span><input tabindex="2" type="email" name="email" placeholder=someone@gmail.com class="text" required></label>
+            </p><br>
+            <p>
+            <label class="feedback"> Your Feedback <textarea tabindex="3" cols="40" rows="3" class="feedbackBox" ></textarea></label>
+                <input tabindex="4" type="submit" value="Send" class="submitBtn"></input>
             </p>
-                    <input type="hidden" name="source" value="ContactForm">
-                <p>
-                <label for="feedbackText">Your feedback:</label>
-            </p>
-                <p><textarea tabindex="3" name="feedbackText" cols="40" rows="3"></textarea>
-                </p>
-                <li>
-                    <input tabindex="4" type="submit" value="SendContact">
-                </li>
-                </div>
                 </fieldset>
-                </form>
+            
+            
+                    
                 <footer class="clearfix">
                     <div class="row limited">
                         <section class="column small-12 medium-6 large-3">
@@ -106,9 +100,12 @@
                 </div>
                 </footer>
     </div>
+    </div>
     <script src=".js/menuToggle.js"></script>
+    
+    </body>
 
-
+</head>
 </body>
 
 </html>
