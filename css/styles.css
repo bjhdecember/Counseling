@@ -175,7 +175,7 @@ body{
 }
 
 
-/*** Just getting silly now ***************************/
+
 .wrapper.active p{
      color: rgb(186, 105, 197);
     transition-delay: 150ms;
@@ -211,8 +211,9 @@ nav img{
     float: inline-end;
     height: 70px;
     width: 40;
-    margin-right: .5%;
-    
+    margin-left: .5%;
+    position:fixed; top:0; left:0;
+    margin-top: .5%;
 }
 
 .hyperlink{
@@ -237,6 +238,7 @@ fieldset{
     margin-top: 10%;
     font-size: 120%;
     max-width: 25rem;
+    flex-wrap: wrap;
     
 }
 
@@ -389,10 +391,15 @@ span{
         margin: auto;
     }
     
+    
 }
 
+#content-desktop{display: block;}
+#content-mobile{display: none;}
 
-
+@media only screen and (min-width: 300px) {
+    figcaption{visibility: hidden;}
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -400,6 +407,7 @@ span{
         text-align: center;
     }
   .medium-6{width: 50%;}
+ figcaption{visibility: visible;}
     /*end of medium media query*/
 }
 @media only screen and (min-width: 1200px) {
@@ -413,12 +421,15 @@ span{
         width: 20%;
     }
     .large-3{width: 25%;}
+    figcaption{visibility: visible;}
+    
 } /*end of large media query*/
 
 
 figcaption{
     text-indent: 45%; 
 }
+
 .img1{
     float: center;
     padding-right: 0%;
