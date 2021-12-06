@@ -1,7 +1,7 @@
 *{
     padding: 0; border: 0; margin: 0; 
     box-sizing: border-box;
-    list-style-type: none; /* Styled in normalize.css */
+    list-style-type: none; 
     text-decoration: none;
     color: rgb(245, 241, 241);
     
@@ -227,9 +227,10 @@ html
 }
 
 iframe{
-  margin-top: 10%;
+  margin-top: 15%;
   float: center;
 }
+
 fieldset{
     border-color:purple;
     border-width: 3px;
@@ -456,9 +457,9 @@ form label{
 
 
 h2{
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
  p{
-    padding-top: 1rem;
+    padding-top: 2rem;
     font-size: 2rem;
  }
