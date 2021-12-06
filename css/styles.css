@@ -74,6 +74,7 @@ body{
     letter-spacing: 1.5px;
     margin-bottom: .6rem;
     text-transform: uppercase;
+    margin-top: 5%;
 }
 
 .main-contents p{
@@ -209,11 +210,13 @@ width: 500;
 }
 nav img{
     float: inline-end;
-    height: 70px;
-    width: 40;
+    height: 200px;
+    width: 200px;
     margin-left: .5%;
     position:fixed; top:0; left:0;
-    margin-top: .5%;
+    margin-top: 3%;
+    position:absolute;
+    
 }
 
 .hyperlink{
