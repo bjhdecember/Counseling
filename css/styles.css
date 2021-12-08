@@ -238,7 +238,23 @@ nav img{
     position:absolute;
     
 }
-
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
 
 .hyperlink{
     color: rgb(67, 114, 241);
@@ -357,6 +373,7 @@ span{
         font-size: 2rem;
         flex-wrap: wrap;
     }
+    
     figcaption{
         text-indent: 45%; 
     }
@@ -592,6 +609,7 @@ span{
     /*end of medium media query*/
 }
 @media only screen and (min-width: 1200px) {
+   
     nav img{
         height: 130px;
         width: 130px;
@@ -650,5 +668,12 @@ h2{
 }
  p{
     padding-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
  }
+ 
+ p1{
+    color: black;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
