@@ -5,3 +5,4 @@ The website includes css slidein animation on the Biblical Counseling and Resour
 Javascript is included on the hamburger button to display the navigation list.
 The css includes media query to display on small, medium and large screens. 
 The images and text are responsive.
+I added in some css animations on the counseling and resources pages.
