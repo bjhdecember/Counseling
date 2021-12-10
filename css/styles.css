@@ -30,7 +30,7 @@ body{
 }
 
 .masthead{
-    /* Both of these are needed to keep the #menu-toggle visible when nav list is active / open. */
+    /* Both are needed this will keep the #menu-toggle visible when the nav list is active / open. */
     position: relative;
     z-index: 1000;
     /********************************/
@@ -92,7 +92,7 @@ body{
 
 
 
-/************* Style and animate the nav overlay ***********************/
+/************* nav overlay animation and style***********************/
 .main-nav-list::before,
 .main-nav-list::after{
     background-color:#ecdee4;
@@ -136,7 +136,7 @@ body{
     display: none;
 }
 
-/************* Style the nav elements when active. ***********************/
+/*************nav elements style when active. ***********************/
 .masthead.active h1{
     text-shadow: 0px 3px 3px rgba(0,0,0,.4);
 }
@@ -385,14 +385,12 @@ span{
         position:fixed; top:0; right:0;
         margin-top: 0%;
         position:absolute;
-        
     }
     
 }
     p{
         padding-top: 1rem;
-        font-size: 1rem;
-        
+        font-size: 1rem; 
     }
     
     figcaption{
@@ -413,9 +411,6 @@ span{
         font-size: 120%;
         max-width: 25rem;
         flex-wrap: wrap;
-        
-    
-        
     }
 
     
@@ -455,7 +450,6 @@ span{
     input:focus:invalid{
         border-color: black;
         content:"";
-        
     }
     input {
         color: black;
@@ -467,7 +461,6 @@ span{
         color: black;
         height: 1rem;
         width: 30%;
-        
     }
     .feedbackBox{
         color: black;
@@ -475,7 +468,6 @@ span{
         height: 10rem;
         width: 50%;
         display: block;
-    
     }
     span{
         font-size: .75rem;
@@ -595,7 +587,6 @@ span{
         flex-wrap: wrap;
         height: 100%;
         width: 90vw;
-        
     }
 
     
@@ -635,7 +626,6 @@ span{
     input:focus:invalid{
         border-color: black;
         content:"";
-        
     }
     input {
         color: black;
@@ -647,7 +637,6 @@ span{
         color: black;
         height: 1rem;
         width: 30%;
-        
     }
     .feedbackBox{
         color: black;
@@ -655,7 +644,6 @@ span{
         height: 10rem;
         width: 50%;
         display: block;
-    
     }
     span{
         font-size: .75rem;
@@ -693,7 +681,6 @@ span{
         margin: 0 0 .3rem 0;
         text-align: left;
         padding-top: 5%;
-        
     }
     
     footer h4 {
@@ -715,7 +702,6 @@ span{
         text-align: justify;
         padding-top: 10%;
         flex-wrap: wrap;
-
     }
     .clearfix:after {
         content: "";
@@ -725,7 +711,6 @@ span{
     footer img{
         float: left;
         display: block;
-
     }
     
     footer li {
@@ -742,7 +727,6 @@ span{
         position:fixed; top:0; right:0;
         margin-top: 6%;
         position:absolute;
-        
     }
 /* grid rules*/
 .column{float: left;}
@@ -766,7 +750,6 @@ footer h2 {
     margin: 0 0 .3rem 0;
     text-align: center;
     padding-top: 5%;
-    
 }
 
 footer h4 {
@@ -820,7 +803,6 @@ footer ul li{
         position:fixed; top:0; right:0;
         margin-top: 0%;
         position:absolute;
-        
     }
     footer ul li{
         text-align: center;
@@ -881,7 +863,6 @@ footer ul li{
     footer h3 {
         text-align: center;
         padding-top: 10%;
-
     }
     footer li {
         text-align: center;
@@ -931,7 +912,7 @@ p{
     padding-top: 2rem;
     font-size: 1.5rem;
 }
- 
+
 p1{
     color: black;
     padding-top: 1rem;
